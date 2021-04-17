@@ -34,7 +34,7 @@ class App extends React.Component {
 
   getFilteredUsersForText(text) {
     return new Promise(resolve => {
-      const time = (Math.random() + 1) * 250;
+      const time = (Math.random() + 1) * 10;
       setTimeout(() => {
         const filteredUsers = allUsers.filter(user => user.toLowerCase().includes(text.toLowerCase()));
         resolve(filteredUsers);
